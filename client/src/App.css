@@ -1,0 +1,42 @@
+/* App Styles */
+.app-container {
+  background-color: #0a0a0a;
+  min-height: 100vh;
+}
+
+/* Animation for page transitions */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Modal animations */
+@keyframes slideIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.modal-enter {
+  animation: slideIn 0.2s ease-out;
+}
+
+/* Smooth transitions */
+* {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
